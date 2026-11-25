@@ -4,6 +4,8 @@ An unofficial backport of [CozyUI+](https://modrinth.com/resourcepack/cozyui-plu
 **1.6.1 – 1.19.4**, shipped as 11 files — one per resource-pack format generation — covering
 **63 release versions with zero format warnings**.
 
+**Download:** [Modrinth](https://modrinth.com/resourcepack/cozyui-minus) · [CurseForge](https://www.curseforge.com/minecraft/texture-packs/cozyui-minus)
+
 > **CozyUI+ is a resource pack, not a mod.** The upstream repository contains only a README,
 > artwork and PSD sources: no Java code, no `build.gradle`. Backporting it is therefore a question
 > of texture paths and GUI geometry rather than loaders, mappings or mixins, and it needs no JDK.
@@ -14,10 +16,18 @@ An unofficial backport of [CozyUI+](https://modrinth.com/resourcepack/cozyui-plu
 
 ---
 
-## Downloads
+## Download and install
 
-Drop the chosen zip into `.minecraft/resourcepacks/` and enable it in *Options → Resource Packs*.
-Do **not** unpack it. Every file uses the same icon, `assets/pack.png`.
+| Platform | Link |
+|---|---|
+| **Modrinth** | <https://modrinth.com/resourcepack/cozyui-minus> |
+| **CurseForge** | <https://www.curseforge.com/minecraft/texture-packs/cozyui-minus> |
+
+Pick the file for your game version, drop it into `.minecraft/resourcepacks/` and enable it in
+*Options → Resource Packs*. Do **not** unpack it. Every file uses the same icon `assets/pack.png`.
+
+Packaged builds are not hosted in this repository. `dist/` is produced locally, as described under
+[Building from source](#building-from-source).
 
 ### Why 11 files instead of one
 

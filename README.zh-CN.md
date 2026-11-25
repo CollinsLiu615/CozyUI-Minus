@@ -17,9 +17,15 @@
 
 ---
 
-## 产物
+## 下载与安装
 
-`dist/` 下的 zip 丢进 `.minecraft/resourcepacks/` 就能用（**不要解压**）。图标已换成 `assets/pack.png`。
+| 平台 | 地址 |
+|---|---|
+| **Modrinth** | <https://modrinth.com/resourcepack/cozyui-minus> |
+| **CurseForge** | <https://www.curseforge.com/minecraft/texture-packs/cozyui-minus> |
+
+按自己的游戏版本选文件，丢进 `.minecraft/resourcepacks/` 启用即可（**不要解压**）。图标统一为
+`assets/pack.png`。本仓库不存放成品包，`dist/` 由本地构建产生，见下文「从源码构建」。
 
 ### 一个格式号一个包：63 个正式版全部零警告
 
