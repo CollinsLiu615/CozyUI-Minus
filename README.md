@@ -111,7 +111,7 @@ docs/porting-notes.md        full technical notes and measurements
 docs/porting-notes.zh-CN.md  the same, in Chinese
 docs/description-en.md       store copy for Modrinth / CurseForge
 docs/img/                    comparison images and the gradient preview
-assets/pack.png              icon shared by every artifact
+assets/pack.png              project icon, copied into every artifact (build input; not upstream's)
 work/build-report.json       build report: per-texture agreement ratios and drop reasons
 ```
 

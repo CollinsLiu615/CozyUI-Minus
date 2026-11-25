@@ -51,8 +51,7 @@ The resulting ranges are:
 ```
 
 Because a file can declare only one value, a pack covering several formats will always show the
-notice on part of its range. The only way to have no notice anywhere is one file per format — see
-§9.
+notice on part of its range. The only way to have no notice anywhere is one file per format — see §7.
 
 ## 3. Measured differences between adjacent versions
 
@@ -245,7 +244,28 @@ marks that effect as requiring 1.21+.
 Deleting the corresponding `.png.mcmeta` disables the animation and the texture reverts to a single
 frame with no misalignment.
 
-## 10. Not verified
+## 10. What "source" means in this repository
+
+The upstream repository's `SourceCode/` folder holds `.psd` files: `005.psd` (the interface master)
+and `icon.psd` (the icon master, inside `icon.zip`). Those are **artwork** sources, and they are not
+reproduced here — this port redraws nothing, and the masters belong to the original author.
+
+What this repository provides instead:
+
+| Kind | Where | Purpose |
+|---|---|---|
+| Porting logic | `tools/*.py` | turns the upstream pack into the 11 artifacts |
+| Upstream artwork | fetched by `tools/fetch_inputs.py` | the PNG sheets that logic operates on |
+| Project icon | `assets/pack.png` | written into every artifact as `pack.png` |
+
+The build is therefore reproducible from this repository: clone, fetch the inputs, run three
+commands. What it does not contain is an editable master of the interface artwork; for that the
+upstream `SourceCode/005.psd` is the reference.
+
+Note that the icon here is **not** the upstream icon: upstream's is 128×128, this port's is 96×96.
+It is a build input of this project and is versioned for that reason.
+
+## 11. Not verified
 
 There is no in-game verification in this repository. Everything above is static evidence: pixel
 comparison against official jars, structural validation and reference resolution. Before a release,
