@@ -172,7 +172,7 @@ format notice, and every file serves a single generation, so layout accuracy is 
 ## 8. Pushing down to 1.6.1
 
 Pack format 1 officially spans 1.6.1 – 1.8.9, so the oldest band was extended to the whole range.
-This was verified rather than assumed:
+Verified against the 1.6.1 and 1.6.4 client jars:
 
 - 1.6.1 and 1.6.4 were downloaded and compared against 1.8.9 sheet by sheet;
 - of the 26 GUI sheets the artifact ships, exactly **one** differs: `container/enchanting_table.png`,
@@ -216,9 +216,8 @@ Measured target rectangles, identical across 1.6.1 – 1.19.4:
 | Hotbar highlight | `widgets.png` | `(0,0,24,24)` | 576 px, mean `#3D3D30` |
 | Boss bar (untouched) | `bars.png` | `y81..118`, 8 pairs | pure black, tinted by code |
 
-`bars.png` holds only boss bars — they are black and coloured by the game, so animating them would
-break them. An early assumption that 1.13 moved the experience bar into `bars.png` was wrong; the
-bar has been in `icons.png` since 1.8.
+`bars.png` holds only boss bars, which are black and coloured by the game, so they must not be
+animated. The experience bar has been in `icons.png` since 1.8.
 
 Two recolouring modes are used:
 
@@ -244,28 +243,7 @@ marks that effect as requiring 1.21+.
 Deleting the corresponding `.png.mcmeta` disables the animation and the texture reverts to a single
 frame with no misalignment.
 
-## 10. What "source" means in this repository
-
-The upstream repository's `SourceCode/` folder holds `.psd` files: `005.psd` (the interface master)
-and `icon.psd` (the icon master, inside `icon.zip`). Those are **artwork** sources, and they are not
-reproduced here — this port redraws nothing, and the masters belong to the original author.
-
-What this repository provides instead:
-
-| Kind | Where | Purpose |
-|---|---|---|
-| Porting logic | `tools/*.py` | turns the upstream pack into the 11 artifacts |
-| Upstream artwork | fetched by `tools/fetch_inputs.py` | the PNG sheets that logic operates on |
-| Project icon | `assets/pack.png` | written into every artifact as `pack.png` |
-
-The build is therefore reproducible from this repository: clone, fetch the inputs, run three
-commands. What it does not contain is an editable master of the interface artwork; for that the
-upstream `SourceCode/005.psd` is the reference.
-
-Note that the icon here is **not** the upstream icon: upstream's is 128×128, this port's is 96×96.
-It is a build input of this project and is versioned for that reason.
-
-## 11. Not verified
+## 10. Not verified
 
 There is no in-game verification in this repository. Everything above is static evidence: pixel
 comparison against official jars, structural validation and reference resolution. Before a release,

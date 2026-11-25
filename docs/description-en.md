@@ -101,7 +101,7 @@ Pack format 1 spans 1.6.1 – 1.8.9, so the oldest file reaches back to 1.6 and 
 where Minecraft introduced the current `assets/` resource-pack layout — 1.5.2 and older used the
 old texture-pack format, which cannot carry this pack at all.
 
-That range was measured rather than assumed: 1.6.1 and 1.6.4 differ from 1.8.9 in exactly **one**
+Measured on 1.6.1 and 1.6.4 against 1.8.9: exactly **one**
 of the 26 shipped GUI sheets (the enchanting table, 1.5 % of its pixels); `widgets.png` and
 `icons.png` are pixel-identical, and the gradient regions sit at the same coordinates.
 
