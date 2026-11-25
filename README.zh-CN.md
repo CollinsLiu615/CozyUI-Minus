@@ -1,9 +1,9 @@
 # CozyUI- — 低版本适配（1.6.1 → 1.19.4）
 
-> 本文是 [`README.md`](README.md) 的中文版；仓库主页使用英文版。
+[English](README.md) · **简体中文**
 
 把 [Fogg05/CozyUI-Plus](https://github.com/Fogg05/CozyUI-Plus)（官方 **最低 1.20**）降级移植到
-**1.8 一直到 1.19.4**，并附带一套可复现的构建 / 自检 / 取证工具。
+**1.6.1 一直到 1.19.4**，并附带一套可复现的构建与自检工具。
 
 > **先说最关键的一件事**：CozyUI+ **不是 mod，是资源包**（Modrinth 项目类型 `resourcepack`）。
 > 官方仓库里只有 README、宣传素材和 `.psd` 源文件，没有一行 Java、没有 `build.gradle`。
@@ -12,7 +12,7 @@
 >
 > 商店文案（英文，Modrinth / CurseForge 通用）见 [docs/description-en.md](docs/description-en.md)。
 >
-> **本仓库是独立移植，不是上游的 fork**。原包美术、设计、字体版权归 零雾〇五 Fogg05，
+> **本仓库是独立移植，不是上游的 fork**。原包美术、设计、字体版权归 [零雾〇五 Fogg05](https://github.com/Fogg05)，
 > 按 GPL-3.0 再分发；逐条修改说明见 [NOTICE](NOTICE)。
 
 ---
@@ -195,5 +195,5 @@ work/build-report.json    构建报告（含每张图的吻合度与丢弃原因
 本适配产物是上游美术的修改版再分发，**沿用相同许可**；完整版权归属与逐条修改说明见
 [NOTICE](NOTICE)，许可全文见 [LICENSE](LICENSE)。
 
-* 美术 / 设计 / 原包：**零雾〇五 Fogg05**
+* 美术 / 设计 / 原包：**[零雾〇五 Fogg05](https://github.com/Fogg05)**
 * 低版本移植 / 打包 / 工具：**CollinsLiu**

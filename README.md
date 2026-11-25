@@ -1,5 +1,7 @@
 # CozyUI-
 
+**English** · [简体中文](README.zh-CN.md)
+
 An unofficial backport of [CozyUI+](https://modrinth.com/resourcepack/cozyui-plus) to Minecraft
 **1.6.1 – 1.19.4**, shipped as 11 files — one per resource-pack format generation — covering
 **63 release versions with zero format warnings**.
@@ -10,8 +12,6 @@ An unofficial backport of [CozyUI+](https://modrinth.com/resourcepack/cozyui-plu
 > artwork and PSD sources: no Java code, no `build.gradle`. Backporting it is therefore a question
 > of texture paths and GUI geometry rather than loaders, mappings or mixins, and it needs no JDK.
 >
-> Technical notes and measurements: [`docs/porting-notes.md`](docs/porting-notes.md) ·
-> [中文](docs/porting-notes.zh-CN.md) ·
 > Store copy: [`docs/description-en.md`](docs/description-en.md)
 
 ---
@@ -117,8 +117,6 @@ tools/coverage_matrix.py     layout agreement matrix (artifact x version)
 tools/make_proof.py          three-column comparison images (upstream / backport / vanilla)
 tools/fetch_inputs.py        fetch build inputs (not tracked)
 tools/packformats.json       pack format table with the per-band policy
-docs/porting-notes.md        full technical notes and measurements
-docs/porting-notes.zh-CN.md  the same, in Chinese
 docs/description-en.md       store copy for Modrinth / CurseForge
 docs/img/                    comparison images and the gradient preview
 assets/pack.png              project icon, copied into every artifact (build input; not upstream's)
@@ -155,5 +153,5 @@ CozyUI+ is licensed **GPL-3.0-only**, and its fonts are Noto Sans (SIL OFL 1.1) 
 and a per-item list of modifications are in [`NOTICE`](NOTICE); the license text is in
 [`LICENSE`](LICENSE), with both font licenses alongside it.
 
-* Art, design, fonts, original pack — **零雾〇五 Fogg05**
+* Art, design, fonts, original pack — **[零雾〇五 Fogg05](https://github.com/Fogg05)**
 * Low-version port, packaging, tooling — **CollinsLiu**
