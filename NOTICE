@@ -1,0 +1,58 @@
+CozyUI- — low-version port of CozyUI+
+=====================================
+
+Original work
+-------------
+CozyUI+ — art, design, fonts, tooltips, mod skins and the original packaging
+    Copyright (C) 零雾〇五 / Fogg05
+    https://modrinth.com/resourcepack/cozyui-plus
+    https://github.com/Fogg05/CozyUI-Plus
+    Licensed GPL-3.0-only
+
+This port is dedicated to their memory. Every pixel in the pack is theirs;
+this repository only carries that work down to older game versions.
+
+
+Modifications in this repository
+--------------------------------
+Copyright (C) 2026 CollinsLiu
+
+This is an UNOFFICIAL port. It is not affiliated with, endorsed by, or
+maintained by the original author or their estate.
+
+What was changed, relative to upstream v1.10:
+
+  * Repackaged for Minecraft 1.6.1 - 1.19.4 as 11 files, one per
+    resource-pack format generation, covering 63 release versions.
+    Each file declares the exact pack_format of its range, so the game
+    never shows a "made for a different version" notice.
+
+  * Texture sheets rescaled or re-mapped where the GUI layout changed
+    between versions (creative-inventory tab plates, container panels,
+    HUD sheets). All of it is generated at build time by tools/build.py —
+    no art was redrawn by hand.
+
+  * Sheets whose layout changed too much were dropped rather than shipped
+    misaligned; those screens fall back to vanilla. The per-sheet
+    agreement ratios and drop reasons are recorded in work/build-report.json.
+
+  * The original RGB hue cycle is re-implemented as 8-frame sheet
+    animations (tools/animate.py), because the sprite-animation format the
+    original uses only exists on Minecraft 1.20.2 and newer.
+
+  * Bundled JSON fonts, OptiGUI metadata, sounds and mod textures are
+    pruned from the files whose target version cannot read them.
+
+No new art was created for this port.
+
+
+License
+-------
+This repository as a whole is distributed under GPL-3.0-only, the same
+license as the original work. See LICENSE for the full text.
+
+The fonts bundled in the upstream pack remain under their own licenses.
+Both license texts are copied verbatim from the upstream repository:
+
+  * Noto Sans     — SIL Open Font License 1.1   (LICENSE_of_NotoSans.txt)
+  * Fluent Emoji  — MIT                         (LICENSE_of_FluentEmoji.txt)

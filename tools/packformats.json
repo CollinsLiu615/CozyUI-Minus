@@ -1,0 +1,103 @@
+{
+  "_note": "One file per pack format: pack_format holds a single integer, so a pack covering several formats always shows the \"made for a different version\" notice on part of its range. Cutting bands at format boundaries is the only way to have zero warnings everywhere. Bands 1-3 are strict (no JSON font system, no mod textures); 1.13+ use the full set.",
+  "_source": "pack_format 边界取自各版本 client jar 内 version.json 的 pack_version.resource",
+  "bands": [
+    {
+      "id": "1.6.1-1.8.9",
+      "formats": [
+        1
+      ],
+      "mc": "1.6.1 - 1.8.9",
+      "jar": "1.8.9",
+      "strict": true,
+      "min_agreement": 0.6,
+      "_note": "格式号 1 的官方全范围。实测 1.6.4 / 1.6.1 与 1.8.9 的 26 张 GUI 图里只有附魔台差 1.5%，widgets.png / icons.png 逐像素一致，渐变坐标也一致。"
+    },
+    {
+      "id": "1.9-1.10.2",
+      "formats": [
+        2
+      ],
+      "mc": "1.9 - 1.10.2",
+      "jar": "1.10.2",
+      "strict": true,
+      "min_agreement": 0.6
+    },
+    {
+      "id": "1.11-1.12.2",
+      "formats": [
+        3
+      ],
+      "mc": "1.11 - 1.12.2",
+      "jar": "1.12.2",
+      "strict": true,
+      "min_agreement": 0.6
+    },
+    {
+      "id": "1.13-1.14.4",
+      "formats": [
+        4
+      ],
+      "mc": "1.13 - 1.14.4",
+      "jar": "1.14.4",
+      "min_agreement": 0.55
+    },
+    {
+      "id": "1.15-1.16.1",
+      "formats": [
+        5
+      ],
+      "mc": "1.15 - 1.16.1",
+      "jar": "1.16.1",
+      "min_agreement": 0.55
+    },
+    {
+      "id": "1.16.2-1.16.5",
+      "formats": [
+        6
+      ],
+      "mc": "1.16.2 - 1.16.5",
+      "jar": "1.16.5"
+    },
+    {
+      "id": "1.17-1.17.1",
+      "formats": [
+        7
+      ],
+      "mc": "1.17 - 1.17.1",
+      "jar": "1.17.1"
+    },
+    {
+      "id": "1.18-1.18.2",
+      "formats": [
+        8
+      ],
+      "mc": "1.18 - 1.18.2",
+      "jar": "1.18.2"
+    },
+    {
+      "id": "1.19-1.19.2",
+      "formats": [
+        9
+      ],
+      "mc": "1.19 - 1.19.2",
+      "jar": "1.19.2"
+    },
+    {
+      "id": "1.19.3",
+      "formats": [
+        12
+      ],
+      "mc": "1.19.3",
+      "jar": "1.19.3"
+    },
+    {
+      "id": "1.19.4",
+      "formats": [
+        13
+      ],
+      "mc": "1.19.4",
+      "jar": "1.19.4"
+    }
+  ]
+}

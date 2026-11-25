@@ -1,0 +1,20 @@
+# ── Build inputs: large or copyright-restricted, fetched by tools/fetch_inputs.py ──
+
+# Mojang client jars — copyright Mojang, never commit
+vanilla/
+
+# Upstream CozyUI+ v1.10 pack (~39 MB)
+upstream-packs/
+
+# Upstream repository archive
+github-repo/
+
+# ── Build artifacts: published on Modrinth / CurseForge, not tracked ──
+dist/
+work/
+*.zip.tmp
+
+# ── System / Python ──
+__pycache__/
+*.pyc
+.DS_Store
